@@ -36,3 +36,14 @@ This project aims to provide an API in Laravel to perform user registration, all
 
 | ![Imagem 1](endereco_get.png) | ![Imagem 2](endereco_get_id.png) | ![Imagem 3](endereco_post.png) | ![Imagem 4](endereco_put.png) | ![Imagem 5](endereco_delete.png) |
 |---|---|---|---|---|
+
+## Starting the application
+Before you begin, make sure you have docker installed and configured correctly on your machine. Change the path of your project folder in **docker-compose.yml** anf follow the step below:
+
+1. Open the terminal and navigate to the directory where the project files were saved.
+
+2. Run the command below to starting the application.
+
+```
+docker-compose up
+```
