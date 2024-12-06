@@ -1,27 +1,38 @@
-## Introdução
+## Introduction
 
- Este projeto tem como objetivo fornecer uma API em Laravel para realizar o cadastro de usuários, permitindo que um frontend (como Vue.js, React, ou outro) interaja com a aplicação para cadastrar, visualizar, editar e excluir usuários. A API estará pronta para ser consumida em sistemas web ou móveis.
+This project aims to provide an API in Laravel to perform user registration, allowing a frontend (such as Vue.js, React, or other) to interact with the application to register, view, edit and delete users. The API will be ready to be consumed in web or mobile systems.
 
-## Recursos
+## Resources
 
-- Linguagem de programação PHP 8.1; 
+- PHP 8.1 programming language;
 - Laravel Framework 10.48.25
-- Banco de Dados Open Source PostgreSQL 15.4; 
+- PostgreSQL 15.4 Open Source Database;
 - Docker Desktop 4.36.0;
 - Postman Version 11.21.0;
 
-## Orientação
+## Guidance
 
-- * O arquivo **cadastro.sql** contém uma cópia do banco utilizado.
-- O arquivo **docker-compose.yml** contém uma configuração para criar um container no docker, vpcê precisa alterar a localização do projeto nessa linha do código **C:/laravel:/app ** trocando C:/laravel por um local de sua preferencia aonde está o projeto
+- The **cadastro.sql** file contains a copy of the database used. 
+- The **docker-compose.yml** file contains a configuration to create a container in docker, you need to change the location of the project in this line of code **C:/laravel:/app** replacing C:/laravel with a location of your preference where the project is located.
 
-## Endpoint Usuarios
+## Endpoint Users
 
-- GET /users: Lista todos os usuários.
-- GET /users/{id}: Exibe um usuário específico.
-- POST /users: Cria um novo usuário.
-- PUT /users/{id}: Atualiza um usuário existente.
-- DELETE /users/{id}: Deleta um usuário.
+- GET /users: Lists all users.
+- GET /users/{id}: Displays a specific user.
+- POST /users: Creates a new user.
+- PUT /users/{id}: Updates an existing user.
+- DELETE /users/{id}: Deletes a user.
 
 | ![Imagem 1](users_get.png) | ![Imagem 2](users_get_id.png) | ![Imagem 3](users_post.png) | ![Imagem 4](users_put.png) | ![Imagem 5](users_delete.png) |
+|---|---|---|---|---|
+
+## Endpoint Endereco
+
+- GET /endereco: Lists all address.
+- POST /endereco: Creates a new address.
+- GET /endereco/{id}: Displays a specific address.
+- PUT /endereco/{id}: Updates an existing address.
+- DELETE /endereco/{id}: Deletes an address.
+
+| ![Imagem 1](endereco_get.png) | ![Imagem 2](endereco_get_id.png) | ![Imagem 3](endereco_post.png) | ![Imagem 4](endereco_put.png) | ![Imagem 5](endereco_delete.png) |
 |---|---|---|---|---|
