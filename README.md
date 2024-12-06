@@ -23,6 +23,8 @@ This project aims to provide an API in Laravel to perform user registration, all
 - PUT /users/{id}: Updates an existing user.
 - DELETE /users/{id}: Deletes a user.
 
+## Endpoints  Users Screen
+
 | ![Imagem 1](users_get.png) | ![Imagem 2](users_get_id.png) | ![Imagem 3](users_post.png) | ![Imagem 4](users_put.png) | ![Imagem 5](users_delete.png) |
 |---|---|---|---|---|
 
@@ -33,6 +35,8 @@ This project aims to provide an API in Laravel to perform user registration, all
 - GET /endereco/{id}: Displays a specific address.
 - PUT /endereco/{id}: Updates an existing address.
 - DELETE /endereco/{id}: Deletes an address.
+
+## Endpoints Endereco Screen
 
 | ![Imagem 1](endereco_get.png) | ![Imagem 2](endereco_get_id.png) | ![Imagem 3](endereco_post.png) | ![Imagem 4](endereco_put.png) | ![Imagem 5](endereco_delete.png) |
 |---|---|---|---|---|
