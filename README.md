@@ -38,7 +38,7 @@ This project aims to provide an API in Laravel to perform user registration, all
 |---|---|---|---|---|
 
 ## Starting the application
-Before you begin, make sure you have docker installed and configured correctly on your machine. Change the path of your project folder in **docker-compose.yml** anf follow the step below:
+Before you begin, make sure you have docker installed and configured correctly on your machine. Change the path of your project folder in **docker-compose.yml** and follow the step below:
 
 1. Open the terminal and navigate to the directory where the project files were saved.
 
