@@ -45,7 +45,7 @@ This project aims to provide an API in Laravel to perform user registration, all
 
 - GET /endereco: Lists all address unlinked.
 
-## Endpoints Endereco Screen
+## Endpoints Endereco Unlinked Screen
 
 | ![Imagem 1](endereco_unlinked_get.png) |
 |---|
