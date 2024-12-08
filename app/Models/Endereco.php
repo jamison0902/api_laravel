@@ -20,5 +20,16 @@ class Endereco extends Model
     ];
 
     // Caso esteja utilizando timestamps (created_at, updated_at)
-    public $timestamps = false;  // Como você não tem esses campos na tabela
+    public $timestamps = false;  
+
+    // Define o relacionamento Muitos para Muitos com Usuários
+    public function usuarios()
+    {
+        return $this->belongsToMany(
+            Usuario::class,
+            'cadastro.usuario_endereco', // Nome da tabela intermediária
+            'endereco_id',               // Chave estrangeira em 'usuario_endereco' apontando para 'enderecos'
+            'usuario_id'                 // Chave estrangeira em 'usuario_endereco' apontando para 'usuarios'
+        );
+    }
 }

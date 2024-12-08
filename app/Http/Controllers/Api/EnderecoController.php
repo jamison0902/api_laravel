@@ -15,6 +15,13 @@ class EnderecoController extends Controller
         return response()->json($enderecos);
     }
 
+    // Exibe endereços que não estão vinculados a nenhum usuário
+    public function unlinked()
+    {
+        $enderecosSemUsuarios = Endereco::whereDoesntHave('usuarios')->get();
+        return response()->json($enderecosSemUsuarios);
+    }
+
     // Cria um novo endereço
     public function store(Request $request)
     {

@@ -41,6 +41,15 @@ This project aims to provide an API in Laravel to perform user registration, all
 | ![Imagem 1](endereco_get.png) | ![Imagem 2](endereco_get_id.png) | ![Imagem 3](endereco_post.png) | ![Imagem 4](endereco_put.png) | ![Imagem 5](endereco_delete.png) |
 |---|---|---|---|---|
 
+## Endpoint Endereco Unlinked
+
+- GET /endereco: Lists all address unlinked.
+
+## Endpoints Endereco Screen
+
+| ![Imagem 1](endereco_unlinked_get.png) |
+|---|
+
 ## Starting the application
 Before you begin, make sure you have docker installed and configured correctly on your machine. Change the path of your project folder in **docker-compose.yml** and follow the step below:
 

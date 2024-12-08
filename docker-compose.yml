@@ -9,7 +9,13 @@ services:
     volumes:
       - C:/laravel:/app
     working_dir: /app
-    command: php artisan serve --host=0.0.0.0 --port=8000
+    command: >
+      sh -c "
+      apt-get update &&
+      apt-get install -y libpq-dev &&
+      docker-php-ext-install pdo_pgsql &&
+      php artisan serve --host=0.0.0.0 --port=8000
+      "
 
 networks:
   default:

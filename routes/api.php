@@ -30,6 +30,9 @@ Route::get('endereco/{id}', [EnderecoController::class, 'show']); // Exibir um e
 Route::put('endereco/{id}', [EnderecoController::class, 'update']); // Atualizar um endereço
 Route::delete('endereco/{id}', [EnderecoController::class, 'destroy']); // Deletar um endereço
 
+// Rota para exibir endereços sem usuários
+Route::get('/enderecos/unlinked', [EnderecoController::class, 'unlinked']);
+
 
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //     return $request->user();
